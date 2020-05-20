@@ -1,7 +1,9 @@
-# PaintView
+# PaintView 
+
+[![Jitpack 1.0.0](https://jitpack.io/v/LewieWang/PaintView.svg)](https://jitpack.io/#LewieWang/PaintView)
+
 ### A simple drawing board
 ### 简单画板实现
-
 
 - 支持橡皮檫功能
 - 支持撤销功能
@@ -9,8 +11,25 @@
 - 支持清屏功能
 - ...
 
+#### 在根目录build.gradle中添加
 
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+#### 项目build.gradle中添加
 
+```
+dependencies {
+	        implementation 'com.github.LewieWang:PaintView:Tag'
+	}
+```
+
+#### 如何使用
 ```
 paintView.setEraserWidth(20f)
                 .setPaintColor(Color.RED)
